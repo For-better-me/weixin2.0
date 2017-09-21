@@ -1,0 +1,100 @@
+$(function(){
+
+    // mock data
+    var date_data = [
+        {
+            "date": "2017-08-16",
+            "time": [
+                "8:00",
+                "8:30", 
+                "9:00",
+                "10:00",
+                "11:00",
+                "13:00",
+            ]
+        },
+        {
+            "date": "2017-08-17",
+            "time": [
+                "8:00",
+                "8:30",
+                "9:00",
+                "10:00",
+                "11:00",
+                "12:00",
+                "13:00",
+            ]
+        },
+        {
+            "date": "2017-08-18",
+            "time": [
+                "8:00",
+                "8:30",
+                "9:00"
+            ]
+        },
+        {
+            "date": "2017-08-19",
+            "time": [
+                "8:00",
+                "8:30",
+                "9:00"
+            ]
+        },
+        {
+            "date": "2017-08-20",
+            "time": [
+                "8:00",
+                "8:30",
+                "9:00"
+            ]
+        },
+        {
+            "date": "2017-08-21",
+            "time": [
+                "8:00",
+                "8:30",
+                "9:00"
+            ]
+        }
+    ]
+
+
+
+    var dateArray = [];
+    var timeArray = [];
+    date_data.forEach(function(item,i){
+    dateArray.push({
+        "id":'1'+i+"0000",
+        "value":item.date,
+        "parentId":0
+    })
+    item.time.forEach(function(sub_item,j){
+        timeArray.push({
+            "id":'1'+i+'0'+(j+1)+"00",
+            "value":sub_item,
+            'parentId':'1'+i+"0000"
+        })
+    })
+    }) 
+  $('.come_time').bind('click', function () {
+        var oneLevelId = $('#date').attr('data-date-code');
+        var twoLevelId = $('#date').attr('data-time-code');
+        var iosSelect = new IosSelect(2, 
+            [dateArray,timeArray],
+            {
+                title: '',
+                itemHeight: 35,
+                relation: [1, 1, 0, 0],
+                oneLevelId: oneLevelId,
+                twoLevelId: twoLevelId,
+                callback: function (selectOneObj, selectTwoObj) {
+                    $('#date').attr('data-date-code', selectOneObj.id);
+                    $('#date').attr('data-time-code', selectTwoObj.id);
+                    $('#date').text(selectOneObj.value + ' ' + selectTwoObj.value);
+                    // Iscomplete()
+                }
+        });
+    });
+  
+})

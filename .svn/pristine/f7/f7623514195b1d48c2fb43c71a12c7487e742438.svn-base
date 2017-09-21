@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>订单详情--待沟通</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="order_wrap">
+      <div class="order_track">
+        <a href="javascript:;" class="wrap">
+          <h2 class="font2">订单跟踪</h2>
+          <span class="order_state">已接单，等待小哥电话沟通</span>
+          <p>订单编号：WNQYD3438524</p>
+          <p><b>2017-05-30  14:30</b><b>小哥已接单</b></p>
+        </a>
+      </div>
+      <div class="order_brother">
+        <img src="img/avatar.png">
+        <div class="brother">
+          <h1 class="font2">马云<p><b class="icon_super"><img src="img/icon_super.png"></b>超级小哥</p></h1>
+          <div class="brother_level">
+            <ul>
+              <li><img src="img/icon_star.png"></li>
+              <li><img src="img/icon_star.png"></li>
+              <li><img src="img/icon_star.png"></li>
+              <li><img src="img/icon_star.png"></li>
+            </ul>
+            <p><span>5.0</span>分</p>
+          </div>
+        </div>
+        <a href="#400-6633-750" class="call_brother"></a>
+      </div>
+      <div class="fix_record">
+        <div class="wrap">
+          <h1 class="font2">维修信息</h1>
+          <ul>
+            <li>维修类目<span>马桶疏通：非拆卸，手动疏通</span></li>
+            <li>维修数量<span>x1</span></li>
+            <li class="fix_site">维修地址<span>  李二  15612345678 <b>石家庄市新华区中储广场A座17层，万能小哥</b></span></li>
+            <li>上门时间<span>2017-07-20  15:30</span></li>
+            <li>预付费<span class="main_color">￥30</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="question_desc">
+        <div class="wrap">
+   
+       <h3>问题描述</h3>
+          <p>问题描述内容区问题描述内容区问题描述内容区问题描述内容区问题描述内容区问题描述内容区问题描述内容区问题描述内容区</p>
+          <ul>
+            <li><img src="img/ques.png"></li>
+            <li><img src="img/ques.png"></li>
+            <li><img src="img/ques.png"></li> 
+          </ul>
+        </div>
+      </div> 
+      
+    </div>
+    <div class="order_btn">
+      <button>取消订单</button>
+    </div>
+    
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+   
+</body>
+</html>

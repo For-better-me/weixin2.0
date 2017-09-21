@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>维修详情</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="fix_details">
+      <div class="fix_img">
+        <img src="img/fix-img.png">
+      </div>
+      <div class="fix_item_info">
+      <!-- //限时特惠 -->
+        <!-- <div class="limiting wrap">
+          <h1>龙头安装</h1>
+          <p>￥45 <s>￥80</s><span class="icon_limit"></span></p>
+        </div> -->
+        <!-- 非限时特惠 -->
+        <div class="unlimit wrap">
+          <h1>龙头安装<p><span>45</span>元起</p></h1>
+        </div>
+        <div class="select_specific wrap">请选择具体服务项</div>
+      </div>
+      <div class="fix_wrap">
+        <div class="title_wrap">
+          <a href="javascript:;" class="on">商品详情</a>
+          <a href="javascript:;">评价（<span>3</span>）</a>
+        </div>
+        <div class="info_wrap">此处为商品详情</div>
+        <div class="value_list wrap">
+          <ul>
+            <li>
+              <div class="avatar">
+                <img src="img/avatar.png">
+              </div>
+              <div class="value_info">
+                <h1>古天乐<span>2017-05-01</span></h1>
+                <div class="star">
+                  <ul>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                  </ul>
+                  <span>非常好</span>
+                </div>
+                <p>师傅维修速度很快，很负责，完美！</p>
+              </div>
+            </li>
+            <li>
+              <div class="avatar">
+                <img src="img/avatar.png">
+              </div>
+              <div class="value_info">
+                <h1>古天乐<span>2017-05-01</span></h1>
+                <div class="star">
+                  <ul>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                  </ul>
+                  <span>非常好</span>
+                </div>
+                <p>师傅维修速度很快，很负责，完美！</p>
+              </div>
+            </li>
+            <li>
+              <div class="avatar">
+                <img src="img/avatar.png">
+              </div>
+              <div class="value_info">
+                <h1>古天乐<span>2017-05-01</span></h1>
+                <div class="star">
+                  <ul>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                  </ul>
+                  <span>非常好</span>
+                </div>
+                <p>师傅维修速度很快，很负责，完美！</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="buy_foot">
+      <div class="shoppingcar">
+        <a href="javascript:;">
+          <img src="img/shopcart.png">
+          <p>购物车</p>
+        </a>
+      </div>
+      <div class="join_car out_join">加入购物车</div>
+      <div class="once_fix out_fix">立即报修</div>
+    </div>
+
+    <div class="layer_details">
+      <b class="close_btn"></b>
+      <div class="layer_details_head">
+        <div class="wrap">
+          <img src="img/order_pic.png">
+          <div class="head_tit">
+            <p class="limit">￥45 <s>￥80</s><span class="icon_limit"></span></p>
+            <!-- <p class="unlimit"><span>45</span>元起</p> -->
+            <p class="choose_item">已选服务：<span></span><b>X1</b></p>
+          </div>
+        </div>
+      </div>
+      <div class="layer_details_body">
+        <div class="layer_serve">
+          <h1 class="font3">服务项</h1>
+          <span>非拆卸，手动疏通</span>
+          <span>非拆卸，电动疏通加手动疏通</span>
+          <span>非拆卸，手动疏通</span>
+        </div>
+        <p class="font3">预付费<span>￥30</span></p>
+        <h2 class="font3">维修数量<p><a href="javascript:;" class="sub">-</a><span class="serve_num">1</span><a href="javascript:;" class="add">+</a></p></h2>
+        <div class="special_tip">
+          <h2 class="font3">特殊说明</h2>
+          <p>该服务需要提供30块钱的的预付费，小哥在接单后会主动联系您，希望您保持电话畅通，无双剑姬菲奥娜，无极剑圣易大师，死蛇挂梢，苏轼</p>
+        </div>
+      </div>
+      <div class="buy_foot">
+        <div class="shoppingcar">
+          <a href="javascript:;">
+            <img src="img/shopcart.png">
+            <p>购物车</p>
+          </a>
+        </div>
+        <div class="join_car layer_join">加入购物车</div>
+        <div class="once_fix layer_fix">立即报修</div>
+      </div>
+    </div>
+    <div class="blank_wrapper"></div>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fix_details.js" type="text/javascript" charset="utf-8"></script> 
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+    
+</body>
+</html>

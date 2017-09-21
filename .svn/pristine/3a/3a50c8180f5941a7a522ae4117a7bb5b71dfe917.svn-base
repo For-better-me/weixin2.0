@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>我的</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+ <form>
+    <div class="my_addr">
+     
+        <ul>
+          <li>
+            <h1 class="wrap">李二<span>177****8457</span></h1>
+            <p class="wrap">石家庄市新华区中华北大街198号中储广场写字楼A座17层万能小哥技术部</p>
+            <div class="area_edit">
+              <div class="wrap">
+                <p><b  class="radio_btn"><input type="radio" name = 'addr'/></b>默认地址</p>
+                <div class="edit_btn">
+                  <a href="editAddr.html"><img src="img/icon_edit.png">编辑</a>
+                  <a href="javascript:;" class="delete_addr"><img src="img/icon_delete.png">删除</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h1 class="wrap">李二<span>177****8457</span></h1>
+            <p class="wrap">石家庄市新华区中华北大街198号中储广场写</p>
+            <div class="area_edit">
+              <div class="wrap">
+                <p><b  class="radio_btn"><input type="radio" name = 'addr'/></b>默认地址</p>
+                <div class="edit_btn">
+                  <a href="editAddr.html"><img src="img/icon_edit.png">编辑</a>
+                  <a href="javascript:;" class="delete_addr"><img src="img/icon_delete.png">删除</a>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="order_btn">
+          <button class="add_addr" type="button">添加新地址</button>
+        </div>
+    </div>
+</form>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jq.layer.js" type="text/javascript" charset="utf-8"></script> 
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+    <script type="text/javascript">
+      // 默认地址选择
+      $('.radio_btn').click(function(){
+        $(this).addClass('select');
+        $(this).parents('li').siblings('li').find('.radio_btn').removeClass('select');
+      })
+      // 删除地址
+      $('.delete_addr').click(function(){
+        var self = $(this);
+        $.layerConfirm({
+          contentTxt:'您确定要删除该地址吗',
+          sureCall:function(){
+            self.parents('li').remove()
+          }
+        })
+      })
+
+      // 添加新地址
+      $('.add_addr').click(function(event) {
+        window.location.href = 'editAddr.html'
+      });
+    </script>
+</body>
+</html>

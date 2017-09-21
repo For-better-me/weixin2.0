@@ -1,0 +1,135 @@
+$(function(){
+
+    // 商品详情与评价切换--goods-info vs comment switch
+    $('.title_wrap a').click(function(){
+        var index = $(this).index();
+        $(this).addClass('on').siblings('a').removeClass('on');
+        if(index == 0){
+            $('.info_wrap').show();
+            $('.value_list').hide();
+        }
+        else{
+            $('.info_wrap').hide();
+            $('.value_list').show();
+        }
+    })
+    // 选择服务项
+    $('.layer_serve span').click(function(){
+        $(this).addClass('on').siblings('span').removeClass('on');
+        var serve_name = $(this).text();
+        $('.choose_item span').text(serve_name);
+        $('.select_specific').text('已选服务：'+serve_name);
+        $('.select_specific').css('color','#333')
+    })
+    // 维修数量加减
+    var serve_count = 1;
+    $('.add').click(function(){
+        serve_count++;
+        $('.serve_num').text(serve_count);
+        $('.choose_item b').text('X'+serve_count);
+    })
+    $('.sub').click(function(){
+        if(serve_count>1){
+            serve_count--;
+        }
+        $('.serve_num').text(serve_count);
+        $('.choose_item b').text('X'+serve_count);
+    })
+    // 加入购物车--立即保修 -- add shopping car
+    var flag_select = 0;
+    $('.select_specific').click(function(){
+        $('.blank_wrapper').show();
+        $('.layer_details').show();
+        $('.blank_wrapper').animate({opacity:1},400);
+        $('.layer_details').animate({bottom:0},400);
+    })
+    $('.blank_wrapper,.close_btn').click(function(){
+        $('.blank_wrapper').animate({opacity:0},400,function(){
+            $('.blank_wrapper').hide();
+        });
+        $('.layer_details').animate({bottom:'-100%'},400,function(){
+            $('.layer_details').hide();
+        });
+    })
+    function hasChoose(){
+        var serve_array = $('.layer_serve span');
+        serve_array.each(function(i,item){
+            if($(item).hasClass('on')){
+                flag_select = 1;
+                return false;
+            }
+        })
+    }
+    // 详情页面点击购物车事件
+    $('.out_join').click(function(){
+        hasChoose();
+        if(flag_select){
+            $.layerToast('添加成功，在购物车等你哦')
+        }
+        else{
+            $('.blank_wrapper').show();
+            $('.layer_details').show();
+            $('.blank_wrapper').animate({opacity:1},400);
+            $('.layer_details').animate({bottom:0},400);
+        }
+    })
+    // 详情页面点击立即报修事件
+    $('.out_fix').click(function(){
+        hasChoose();
+        var now = new Date();
+        var hour = now.getHours()
+        console.log(hour)
+        if(flag_select){
+            if(hour<18){
+               window.location.href = 'order_sure.html';
+            }
+            else{
+                $.layerConfirm({
+                    contentTxt:'当日18:00至次日7:00，为维修高峰时间，小哥接单及回复时间略有延长，为您带来不便中请谅解。',
+                    btn:['确定']
+                   })
+            }
+        }
+        else{
+            $('.blank_wrapper').show();
+            $('.layer_details').show();
+            $('.blank_wrapper').animate({opacity:1},400);
+            $('.layer_details').animate({bottom:0},400);
+        }
+    })
+
+    // 选择服务项里加入购物车事件
+    $('.layer_join').click(function(){
+        hasChoose();
+        if(flag_select){
+            $.layerToast('添加成功，在购物车等你哦')
+        }
+        else{
+            $.layerToast('请选择服务项')
+        }
+    })
+    $('.layer_fix').click(function(){
+        hasChoose();
+        var now = new Date();
+        var hour = now.getHours()
+        console.log(hour)
+        if(flag_select){
+            if(hour<18){
+               window.location.href = 'order_sure.html';
+            }
+            else{
+               $.layerConfirm({
+                contentTxt:'当日18:00至次日7:00，为维修高峰时间，小哥接单及回复时间略有延长，为您带来不便中请谅解。',
+                btns:[{
+                    btn_txt:'确定',
+                    isPref:true
+                }]
+               })
+            }
+        }
+        else{
+            $.layerToast('请选择服务项')
+        }
+    })
+    
+})

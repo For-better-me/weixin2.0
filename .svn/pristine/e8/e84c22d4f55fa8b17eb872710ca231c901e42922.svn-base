@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>设置</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="set">
+      <div class="set_list">
+        <ul>
+          <li><a href="account.html">账号与安全</a></li>
+          <li><a href="javascript:;">使用帮助</a></li>
+          <li><a href="javascript:;">关于</a></li>
+          <li><a href="complaint.html">订单投诉</a></li>
+          <li><a href="#4006633750">客服电话</a></li>
+        </ul>
+      </div>
+      <button class="form_btn exit_btn">退出登录</button>
+    </div>
+ 
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script> 
+    <script src="js/jq.layer.js" type="text/javascript" charset="utf-8"></script> 
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+    <script type="text/javascript">
+      $('.exit_btn').click(function(){
+        $.layerConfirm({
+          contentTxt:'是否确定退出当前账号？',
+          btns:[
+              {
+                'btn_txt':'取消',
+                'btn_class':'cancel',
+                'isPref':true
+              },
+              {
+                'btn_txt':'确定',
+                'btn_class':'sure',
+                'isPref':false,
+                'btn_callback':function(){
+                    alert('退出成功')//退出成功的回调
+                }
+              }
+          ]
+        })
+      })
+    </script>
+</body>
+</html>

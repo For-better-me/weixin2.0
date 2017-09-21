@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>订单详情--待评价</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="order_wrap">
+      <div class="order_track">
+        <a href="javascript:;" class="wrap">
+          <h2 class="font2">订单跟踪</h2>
+          <span class="order_state">待评价</span>
+          <p>订单编号：WNQYD3438524</p>
+          <p><b>2017-05-30  14:30</b><b>支付完成待评价</b></p>
+        </a>
+      </div>
+      <div class="order_link">
+        <a href="javascript:;" class="font2 wrap">订单信息</a>
+      </div>
+      <div class="fix_price">
+        <div class="wrap">
+          <h1 class="font2">维修费用<b class="arrow_up"></b><span class="price">￥880</span></h1>
+          <div class="fee_list">
+            <ul>
+              <li>
+                <h2>人工费<span class="price">￥200</span></h2>
+              </li>
+              <li>
+                <h2>材料费<span class="price">￥200</span></h2>
+                <ol>
+                  <li>马桶盖子<span>￥100</span></li>
+                  <li>马桶盖子<span>￥100</span></li>
+                </ol>
+              </li>
+              <li>
+                <h2>材料费<span class="price">￥200</span></h2>
+                <ol>
+                  <li>马桶盖子<span>￥100</span></li>
+                  <li>马桶盖子<span>￥100</span></li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="order_link">
+        <a href="javascript:;" class="font2 wrap">发票申请</a>
+      </div>
+
+      <div class="question_desc top15">
+        <div class="wrap">
+          <h3 class="font2">维修记录</h3>
+          <p>问题描述内容区问题描述内容区问题描述内容区问题描述内容区问题描述内容区问题描述内容区问题描述内容区问题描述内容区</p>
+          <ul>
+            <li><img src="img/ques.png"></li>
+            <li><img src="img/ques.png"></li>
+            <li><img src="img/ques.png"></li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+    <div class="unvalue_btn">
+      <a href="javascript:;">申请返修</a>
+      <a href="value.html">评价</a>
+    </div>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+      $('.fix_price h1').click(function(event) {
+        $('.fee_list').stop(true).slideToggle();
+        $(this).toggleClass('up');
+      });
+    </script>
+   
+</body>
+</html>

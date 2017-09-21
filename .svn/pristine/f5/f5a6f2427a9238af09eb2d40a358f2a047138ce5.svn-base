@@ -1,0 +1,16 @@
+$(function(){
+    // 优惠券详情
+    $('.look_details_btn').click(function(){
+        $(this).find('b').toggleClass('turn_up');
+        $(this).parents('li').toggleClass('on')
+        $(this).parents('li').find('.coupon_detail').stop(true).slideToggle()
+    })
+
+    // 优惠券类型切换
+    $('.coupon_tit>a').click(function(){
+        var _index = $(this).index();
+        $(this).addClass('on').siblings('a').removeClass('on');
+        $('.coupon_list').hide();
+        $('.coupon_list').eq(_index).show();
+    })
+})

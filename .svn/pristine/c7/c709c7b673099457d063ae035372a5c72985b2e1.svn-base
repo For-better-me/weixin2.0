@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>订单投诉</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="complaint_wrap">
+      <div class="common_tit_cb">
+        <a href="javascript:;" class="on">可投诉</a>
+        <a href="javascript:;">已投诉</a>
+      </div>
+      <!-- 未投诉订单 -->
+      <div class="complaint_list">
+        <ul>
+          <li>
+            <div class="wrap">
+              <img src="img/shopcar.png">
+              <div class="complaint_order">
+                <h3>马桶疏通</h3>
+                <p>手动拆卸疏通</p>
+                <span>订单编号：454354343433221 拷贝 3</span>
+                <a href="fill_complaint.html">投诉</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="wrap">
+              <img src="img/shopcar.png">
+              <div class="complaint_order">
+                <h3>马桶疏通</h3>
+                <p>手动拆卸疏通</p>
+                <span>订单编号：454354343433221 拷贝 3</span>
+                <a href="fill_complaint.html">投诉</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- 已投诉订单 -->
+      <div class="complaint_list none">
+        <ul>
+          <li>
+            <div class="wrap">
+              <img src="img/shopcar.png">
+              <div class="complaint_order">
+                <h3>马桶疏通</h3>
+                <p>手动拆卸疏通</p>
+                <span>订单编号：454354343433221</span>
+                <b>处理中</b>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="wrap">
+              <img src="img/shopcar.png">
+              <div class="complaint_order">
+                <h3>马桶疏通</h3>
+                <p>手动拆卸疏通</p>
+                <span>订单编号：454354343433221</span>
+                <b>已处理</b>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+    <script type="text/javascript">
+      $('.common_tit_cb a').click(function(){
+        var complaint_tit_index = $(this).index();
+        $(this).addClass('on').siblings('a').removeClass('on');
+        $('.complaint_list').hide();
+        $('.complaint_list').eq(complaint_tit_index).show();
+      })
+    </script>
+    
+</body>
+</html>

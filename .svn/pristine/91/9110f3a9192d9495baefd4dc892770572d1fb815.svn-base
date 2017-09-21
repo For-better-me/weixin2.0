@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>SKU列表</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="sort">
+        <div class="sort_list">
+            <ul>
+                <li class="on">沙发</li>
+                <li>床</li>
+                <li>餐具</li>
+                <li>茶几</li>
+                <li>电视机</li>
+                <li>鞋/衣帽架</li>
+                <li>沙发</li>
+                <li>床</li>
+                <li>餐具</li>
+                <li>茶几</li>
+                <li>电视机</li>
+                <li>鞋/衣帽架</li>
+                <li>沙发</li>
+                <li>床</li>
+                <li>餐具</li>
+                <li>茶几</li>
+                <li>电视机</li>
+                <li>鞋/衣帽架</li>
+            </ul>
+        </div>
+        <div class="fix_list">
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <div class="fix_pic">
+                            <img src="img/fix.png">
+                        </div>
+                        <div class="fix_des">
+                            <h2>其他沙发安装<b>限时特惠</b></h2>
+                            <p>沙发简单安装维修，更换订单维修，更换订单数维修，更换订单数数字 坏的东西零件</p>
+                            <span>￥198起</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div class="fix_pic">
+                            <img src="img/fix.png">
+                        </div>
+                        <div class="fix_des">
+                            <h2>其他沙发安装<b>限时特惠</b></h2>
+                            <p>沙发简单安装维修件</p>
+                            <span>￥198起</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <div class="fix_pic">
+                            <img src="img/fix.png">
+                        </div>
+                        <div class="fix_des">
+                            <h2>其他沙发安装<b>限时特惠</b></h2>
+                            <p>沙发简单安装维修，更换订单数字 坏的东西零件</p>
+                            <span>￥198起</span>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <ul>2</ul>
+            <ul>3</ul>
+            <ul>4</ul>
+            <ul>5</ul>
+            <ul>6</ul>
+            <ul>7</ul>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+    <script type="text/javascript">
+        var window_height = $(window).height();
+        $('.sort_list').height(window_height);
+        $('.sort_list>ul>li').eq(0).addClass('on') //分类序数
+        $('.fix_list>ul').eq(0).addClass('on') //分类序数
+        $('.sort_list>ul>li').click(function(){
+            var index = $(this).index();
+            $(this).addClass('on').siblings('li').removeClass('on');
+            $('.fix_list>ul').eq(index).addClass('on')
+            $('.fix_list>ul').eq(index).siblings('ul').removeClass('on')
+        })
+    </script>
+</body>
+</html>

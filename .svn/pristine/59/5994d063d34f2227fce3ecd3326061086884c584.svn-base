@@ -1,0 +1,14 @@
+$(function(){
+    $('.title_wrap a').click(function(){
+        var index = $(this).index();
+        $(this).addClass('on').siblings('a').removeClass('on');
+        if(index == 0){
+            $('.info_wrap').show();
+            $('.value_list').hide();
+        }
+        else{
+            $('.info_wrap').hide();
+            $('.value_list').show();
+        }
+    })
+})

@@ -1,0 +1,37 @@
+$(function(){
+    $('.agreement input').click(function(event) {
+        $('.agreement').toggleClass('checked')
+        console.log('ss')
+    });
+
+    // 表单验证
+    var dom_phone = $('#phone');
+    var dom_captcha = $('#captcha');
+    var dom_password = $('#password');
+    var dom_checkbox = $('#checkbox');
+    var value_phone = '';
+    var value_captcha = '';
+    var value_password = '';
+    var value_check = true;
+    var captcha = 2233;//假设这是手机验证码
+    function validate(){
+        value_phone = dom_phone.val();
+        value_captcha = dom_captcha.val();
+        value_password = dom_password.val();
+        value_check = dom_checkbox.prop('checked');
+        if()
+
+    }
+    dom_phone.blur(function(event) {
+        value_phone = dom_phone.val();
+        if(phone_validate(value_phone)){
+            dom_phone.val('');
+        }
+    });
+    $('.register_btn').click(function(){
+        validate();
+        if(validate()){
+            console.log('提交数据')
+        }
+    })
+})

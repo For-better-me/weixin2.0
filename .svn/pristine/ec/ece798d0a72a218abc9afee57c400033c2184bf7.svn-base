@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>登陆</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/dropload.css"/>
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="login">
+        <form>
+            <div class="form_common">
+                <ul>
+                    <li>
+                        <img src="img/icon_phone.png">
+                        <p><input type="number" placeholder="请输入手机号" id="phone" autocomplete="off"/></p>
+                    </li>
+                    <li>
+                        <img src="img/icon_password2.png">
+                        <p><input type="password" placeholder="请输入密码" id="password" autocomplete="off"/><b class="icon_password"></b></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="forget">
+                <a href="javascript:;">快速登陆</a>
+                <a href="forget.html">忘记密码?</a>
+            </div>
+            <div class="btn_box">
+                <a href="register.html" class="btn_zc">注册</a>
+                <a href="javascript:;" class="btn_dl">登陆</a>
+            </div>
+            
+        </form>
+    </div>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/TouchSlide.1.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/dropload.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+    <script type="text/javascript">
+        // 密码图标睁眼闭眼切换
+        $('.icon_password').click(function(){
+            var type_password = $('#password').attr('type');
+            if(type_password == 'password'){
+                $('#password').attr('type','text');
+                $(this).addClass('open');
+            }
+            else{
+                $('#password').attr('type','password');
+                $(this).removeClass('open');
+            }
+        })
+    </script>
+</body>
+</html>

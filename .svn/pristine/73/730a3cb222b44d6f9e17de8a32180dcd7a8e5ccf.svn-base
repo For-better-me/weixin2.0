@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>评价</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="value_wrap">
+      <form>
+        <p class="value_item font2">马桶疏通：非拆卸，手动疏通</p>
+        <div class="total_value">
+          <h1 class="wrap font2">总体评价：
+            <label for='good'><input type="radio" name="value" id="good" />好评</label>
+            <label for='soso'><input type="radio" name="value" id="soso" />中评</label>
+            <label for='poor'><input type="radio" name="value" id="poor" />差评</label>
+          </h1>
+          <div class="value_con">
+            <textarea placeholder="发表有内容的评价，有现金红包哦！" maxlength="100" class="wrap"></textarea>
+          </div>
+          <p class="num_value wrap"><span>0</span>/100</p>
+        </div>
+        <div class="serve_value">
+          <h2 class="font2 wrap">服务评价</h2>
+          <div class="sort_serve wrap">
+            <p>接单速度</p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <span>差</span>
+          </div>
+          <div class="sort_serve wrap">
+            <p>仪表仪容</p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <span>差</span>
+          </div>
+          <div class="sort_serve wrap">
+            <p>服务态度</p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <span>差</span>
+          </div>
+          <div class="sort_serve wrap">
+            <p>专业速度</p>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+            <span>差</span>
+          </div>
+          <div class="faceless">
+            <div class="wrap">
+              <label for="checkbox_faceless"><input type="checkbox" id='checkbox_faceless'/>匿名</label>
+              <span>您的评价将以匿名形式展现</span>
+            </div>
+          </div>
+        </div>
+        
+      </form>
+ 
+  
+
+
+      
+    </div>
+   
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" src="js/value.js" charset="utf-8"></script>
+   
+</body>
+</html>

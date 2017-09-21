@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>申请发票</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iosSelect.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="apply_bill_wrap">
+        <form>
+          <div class="fill_bill_1">
+            <ul>
+              <li class="font2">开具金额<h1><i>￥</i>3000</h1></li>
+              <li class="font2">发票抬头<input autocomplete="off" placeholder="请输入" /></li>
+              <li class="font2">纳税人识别号<input autocomplete="off" placeholder="请输入" /></li>
+              <li class="font2">备注<textarea name="" id=""  rows="4" placeholder="您可以将您的特殊需求告诉我们您可以将您的特殊需求告诉我们您可以将您的特殊需求告诉我们"></textarea></li>
+            </ul>
+          </div>
+          <div class="fill_bill_2">
+            <h3>收票人信息</h3>
+            <ul>
+              <li class="font2">姓名<input type="text" placeholder="请输入"></li>
+              <li class="font2">手机号<input type="number" placeholder="请输入"></li>
+              <li class="font2">姓名<input type="text" placeholder="请选择" readonly="readonly"></li>
+              <li class="font2">详细地址<textarea placeholder="请输入您的地址细地址"></textarea></li>
+            </ul>
+          </div>
+          <div class="fill_bill_3">
+            <h1>温馨提示</h1>
+            <ul>
+              <li>1、风里飘雪的花在记忆之中发芽，那些红色绿色我们的青春年华，志向无限远大，转眼已各奔天涯，独自走在街上只看见曾经的晚霞</li>
+              <li>2、最懂的人最暖的伴</li>
+              <li>3、发票只开具人工部分</li>
+            </ul>
+          </div>
+          <div class="order_btn">
+            <button type="button">确认无误，提交</button>
+          </div>
+        </form>
+
+    </div>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+    <script type="text/javascript">
+    
+    </script>
+    
+</body>
+</html>

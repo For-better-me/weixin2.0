@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>微信搜索</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="search">
+        <div class="search_box">
+            <input type="text" placeholder="输入要搜索的内容" />
+        </div>
+        <div class="search_recommend">
+            <div class="wrap">
+                <div class="recent">
+                    <h1 class="font">最近搜索</h1>
+                    <span>空调清洗</span>
+                    <span>空调清洗</span>
+                    <span>空调清洗空调清洗空调清洗空调清洗调清洗空调清洗调清洗空调清洗空调清洗空调清洗</span>
+                    <span>空调清洗空调清洗</span>
+                </div>
+                <div class="hot">
+                    <h1 class="font">热门搜素</h1>
+                    <ul>
+                        <li>1、空调清洗</li>
+                        <li>2、空调清洗</li>
+                        <li>3、下水道堵了，需要疏通下水道</li>
+                        <li>4、空调清洗</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="about_recommend">
+            <div class="faq">
+                <h1 class="font wrap">常见问题</h1>
+                <div class="nodata">
+                    <img src="img/nodata.png">
+                </div>
+                <div class="list_faq">
+                    <ul class="wrap">
+                        <li>1、空调清洗</li>
+                        <li>2、空调清洗</li>
+                        <li>3、下水道堵了，需要疏通下水道</li>
+                        <li>4、空调清洗</li>
+                    </ul>
+                </div>
+                <a href="javascript:;" class="fast_order">快速下单</a>
+            </div>
+            <div class="about_serve">
+                <h1 class="font wrap">相关服务</h1>
+                <div class="nodata">
+                    <img src="img/nodata2.png">
+                </div>
+                <div class="item_list">
+                <ul>
+                    <li class="wrap">
+                        <a href="javascript:;">
+                            <div class="item_img">
+                                <img src="img/item1.png">
+                            </div>
+                            <div class="item_des">
+                                <h2>洗衣机安装维修安装维修安装维修</h2>
+                                <p>查看问题并维修安装洗维修安装洗维修安装洗维修安装洗衣机</p>
+                                <span>45/次</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="wrap">
+                        <a href="javascript:;">
+                            <div class="item_img">
+                                <img src="img/item2.png">
+                            </div>
+                            <div class="item_des">
+                                <h2>洗衣机安装维修安装维修安装维修</h2>
+                                <p>查看问题并维修安装洗维修安装洗维修安装洗维修安装洗衣机</p>
+                                <span>45/次</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>微信搜索</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="question-info">
+        <div class="wrap">
+            <h2 class="font2">空调维修</h2>
+            <p>空调呱唧漏水，不制冷了哒哒阿达制冷了哒哒阿达制冷了哒哒阿达</p>
+            <div class="icon_solute">
+                <img src="img/icon_solute.png">
+                <span>已解决</span>
+            </div>
+        </div>
+    </div>
+    <div class="solution_wrap">
+        <h1 class="font2 wrap">解决方案</h1>
+        <div class="item_list">
+            <ul>
+                <li class="wrap">
+                    <a href="javascript:;">
+                        <div class="item_img">
+                            <img src="img/item1.png">
+                        </div>
+                        <div class="item_des">
+                            <h2>洗衣机安装维修安装维修安装维修</h2>
+                            <p>查看问题并维修安装洗维修安装洗维修安装洗维修安装洗衣机</p>
+                            <span>45/次</span>
+                            <b>此服务已解决上述问题<i>1580</i>次</b>
+                        </div>
+                    </a>
+                </li>
+                <li class="wrap">
+                    <a href="javascript:;">
+                        <div class="item_img">
+                            <img src="img/item2.png">
+                        </div>
+                        <div class="item_des">
+                            <h2>洗衣机安装维修安装维修安装维修</h2>
+                            <p>查看问题并维修安装洗维修安装洗维修安装洗维修安装洗衣机</p>
+                            <span>45/次</span>
+                            <b>此服务已解决上述问题<i>1580</i>次</b>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+    <script type="text/javascript">
+        // $('.pl_box .pl_list').each(function(i,item){
+        //     var size = $(item).find('.star').attr('data-size');
+        //     var starNode = '';
+        //     for(var i= 0;i<size;i++){
+        //         starNode += '<li></li>'
+        //     }
+        //     $(item).find('.star').prepend(starNode)
+        // })
+    </script>
+</body>
+</html>

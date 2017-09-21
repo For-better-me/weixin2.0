@@ -1,0 +1,32 @@
+$(function(){
+    var showDom = document.querySelector('#age');
+    var showClick = document.querySelector('#age_wrap');
+    showClick.addEventListener('click', function () {
+        var yearId = showDom.dataset['year_id'];
+        // var suValue = showDom.dataset['su_value'];
+        var monthId = showDom.dataset['month_id'];
+        // var weiValue = showDom.dataset['wei_value'];
+        var ageSelect = new IosSelect(2, 
+            [yearData, monthData],
+            {
+                title: '',
+                itemHeight: 35,
+                oneLevelId: yearId,
+                twoLevelId: monthId,
+                callback: function (selectOneObj, selectTwoObj) {
+                    showDom.innerHTML = selectOneObj.value + '-' + selectTwoObj.value;
+
+                    showDom.dataset['year_id'] = selectOneObj.id;
+                    // showDom.dataset['su_value'] = selectOneObj.value;
+                    showDom.dataset['month_id'] = selectTwoObj.id;
+                    // showDom.dataset['wei_value'] = selectTwoObj.value;
+                }
+        });
+    });
+
+    $('#sex').click(function(){
+        var obj = $('#sex span');
+        layer_select('男生','女生',obj);
+        
+    })
+})

@@ -1,0 +1,168 @@
+$(function(){
+
+    // 编辑按钮 点击事件
+    $('.edit_store').click(function(){
+        $(this).parents('li').find('.shop_item').hide()
+        $(this).parents('li').find('.shop_item_edit').css('display',"inline-block");
+        $(this).hide();
+        $(this).parents('li').find('.complete_store').css('display','inline');
+        $(this).parents('li').find('.delete').animate({right:0},300)
+    })
+    $('.complete_store').click(function(){
+        $(this).parents('li').find('.shop_item_edit').hide()
+        $(this).parents('li').find('.shop_item').css('display',"inline-block");
+        $(this).hide();
+        $(this).parents('li').find('.edit_store').css('display','inline');
+        $(this).parents('li').find('.delete').animate({right:'-100%'},400)
+    })
+    // 维修数量加减
+    $('.add').click(function(event){
+        var serve_count_car = $(this).parents('li').find('.count').text();
+        event.stopPropagation()
+        serve_count_car++;
+        $(this).parents('li').find('.count').text(serve_count_car);
+        $(this).parents('li').find('.shop_item_tit span').text('X'+serve_count_car);
+        compute_price()
+    })
+    $('.sub').click(function(){
+        var serve_count_car = $(this).parents('li').find('.count').text();
+        event.stopPropagation()
+        if(serve_count_car>1){
+            serve_count_car--;
+        }
+        $(this).parents('li').find('.count').text(serve_count_car);
+        $(this).parents('li').find('.shop_item_tit span').text('X'+serve_count_car);
+        compute_price()
+    })
+
+    // 计算总价钱
+    var all_price = 0;
+    function compute_price(){
+        all_price = 0;
+        $('.shop_car_list ul>li').each(function(i,item){
+            var num = $(item).find('.count').text();
+            var unit_price = $(item).find('.shop_item_price').text();
+            if($(item).find('.choose_buy').hasClass('on')){
+                all_price += num * unit_price;
+            }
+        })
+        $('.all_price').text(all_price)
+    } 
+    // 勾选待购买的服务
+    function isAllChoose(){
+        var flag = 0
+        $('.shop_car_list ul>li').each(function(i,item){
+            if($(item).find('.choose_buy').hasClass('on')){
+                flag = 1;
+            }
+            else{
+                flag = 0;
+                return false;
+            }
+        })
+        return flag;
+    }
+    
+    $('.choose_buy').click(function(event) {
+        event.stopPropagation();
+        $(this).toggleClass('on');
+        if(! $(this).hasClass('on')){
+            $('.all_choose').removeClass('on')
+        }
+        else{
+            if(isAllChoose())
+            {
+                $('.all_choose').addClass('on')
+            }
+        }
+        compute_price()  
+    });
+    $('.all_choose').click(function(){
+        $(this).toggleClass('on');
+        if($(this).hasClass('on')){
+          $('.choose_buy').addClass('on');
+        }
+        else{
+          $('.choose_buy').removeClass('on');
+        }
+        compute_price()   
+    })
+
+    //重新选择服务项目
+    var index_serve = 0;//想要修改维修项目的序数
+    $('.shop_item_edit>h2').click(function(){
+        event.stopPropagation();
+        index_serve = $(this).parents('li').index();
+        $('.blank_wrapper').show();
+        $('.layer_details').show();
+        $('.blank_wrapper').animate({opacity:1},400);
+        $('.layer_details').animate({bottom:0},400);
+    })
+
+    //关闭
+    $('.blank_wrapper,.close_btn').click(function(){
+        $('.blank_wrapper').animate({opacity:0},400,function(){
+            $('.blank_wrapper').hide();
+        });
+        $('.layer_details').animate({bottom:'-100%'},400,function(){
+            $('.layer_details').show();
+        });
+        
+    })
+    // 选择服务项
+    $('.layer_serve span').click(function(){
+        $(this).addClass('on').siblings('span').removeClass('on');
+        var serve_name = $(this).text();
+        $('.choose_item span').text(serve_name);
+    })
+    $('.sure').click(function(){
+        var flag_select = 0;
+        var item_name = '';
+        var serve_array = $('.layer_serve span');
+        serve_array.each(function(i,item){
+            if($(item).hasClass('on')){
+                item_name = $(item).text();
+                flag_select = 1;
+                return false;
+            }
+        })
+        if(flag_select){
+            console.log(index_serve)
+            $('.shop_car_list li').eq(index_serve).find('.shop_item_tit p').text(item_name);
+            $('.shop_car_list li').eq(index_serve).find('.shop_item_edit>h2>p').text(item_name);
+            $('.blank_wrapper').animate({opacity:0},400);
+            $('.layer_details').animate({bottom:'-100%'},400);
+            $('.blank_wrapper').hide();
+        }
+        else{
+            layer_tip('请选择服务项')
+        }
+    })
+    // 删除购物车商品
+
+    $('.delete').click(function(){
+        var self = $(this).parents('li');
+        $.layerConfirm({
+            contentTxt:'你确定要删除此服务?',
+            btns:[
+              {
+                'btn_txt':'取消',
+                'btn_class':'cancel',
+                'isPref':true
+              },
+              {
+                'btn_txt':'确定',
+                'btn_class':'sure',
+                'isPref':false,
+                'btn_callback':function(){
+                    self.remove();
+                    compute_price()
+                }
+              }
+            ]
+           
+        });
+      
+    })
+
+})

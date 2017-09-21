@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>我的</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="mine">
+      <div class="mine_center">
+        <a href="personInfo.html" class="wrap">
+          <img src="img/avatar2.png">
+          <div class="mine_info">
+            <h2>随心所遇<b class="woman"></b></h2>
+            <p>15625415687</p>
+          </div>
+        </a>
+      </div>
+      <div class="order_center">
+        <p><a href="order_list.html" class="wrap">我的订单<span>更多订单</span></a></p>
+        <div class="order_sort">
+          <ul>
+            <li>
+              <a href="order_list.html">
+                <img src="img/icon_order1.png">
+                <p>待提交</p>
+              </a>
+            </li>
+            <li>
+              <a href="order_list.html">
+                <img src="img/icon_order2.png">
+                <p>进行中</p>
+              </a>
+            </li>
+            <li>
+              <a href="order_list.html">
+                <img src="img/icon_order3.png">
+                <p>待评价</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="mine_list form_common">
+        <ul>
+          <li>
+            <a href="javascript:;">
+              <img src="img/icon_mine1.png">
+              <p>我的二维码</p>
+            </a>
+          </li>
+          <li>
+            <a href="coupon.html">
+              <img src="img/icon_mine2.png">
+              <p>我的优惠券</p>
+            </a>
+          </li>
+          <li>
+            <a href="myAddr.html">
+              <img src="img/icon_min3.png">
+              <p>我的地址</p>
+            </a>
+          </li>
+          <li>
+            <a href="bill.html">
+              <img src="img/icon_min6.png">
+              <p>发票管理</p>
+            </a>
+          </li>
+          <li>
+            <a href="shoppingCart.html">
+              <img src="img/icon_mine4.png">
+              <p>我的购物车</p>
+            </a>
+          </li>
+          <li>
+            <a href="reset.html">
+              <img src="img/icon_mine5.png">
+              <p>设置</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+       
+
+    </div>
+    <div class="footer_menu">
+        <dl>
+            <a href="index.html">
+                <dt></dt>
+                <dd>首页</dd>
+            </a>
+        </dl>
+        <dl>
+            <a href="javascript:;">
+                <dt></dt>
+                <dd>万能精选</dd>
+            </a>
+        </dl>
+        <dl class="on">
+            <a href="my.html;">
+                <dt></dt>
+                <dd>我的</dd>
+            </a>
+        </dl>
+    </div>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jq.layer.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+    <script type="text/javascript">
+      
+    </script>
+</body>
+</html>

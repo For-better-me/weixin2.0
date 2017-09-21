@@ -1,0 +1,34 @@
+/*commom-style*/
+.button {
+  width: 6.2rem;
+  height: 0.88rem;
+  border-radius: 0.08rem;
+  margin: 0 auto;
+  font-size: 0.32rem;
+  color: #fff;
+}
+.order_btn {
+  position: fixed;
+  bottom: 0;
+  z-index: 99;
+  width: 100%;
+  height: 1.18rem;
+  background-color: #fff;
+}
+.order_btn button {
+  width: 6.6rem;
+  height: 0.88rem;
+  background-color: #fb870d;
+  color: #fff;
+  font-size: 0.32rem;
+  margin: 0.15rem auto;
+}
+.form_btn {
+  width: 100%;
+  height: 0.88rem;
+  display: block;
+  line-height: 0.88rem;
+  text-align: center;
+  font-size: 0.32rem;
+  color: #fb870d;
+}

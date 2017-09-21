@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="shop_car_list">
+      <ul>
+        <li>
+          <h1>家庭灯具管道维修<span class="edit_store">编辑</span><span class="complete_store">完成</span></h1>
+          <div class="wrap">
+            <b class="choose_buy"></b>
+            <img src="img/shopcar.png">
+            <div class="shop_item">
+              <a href="index.html">
+                <h3 class="shop_item_tit">已选择：<p>手动拆卸疏通</p><span>X1</span></h3>
+                <p>￥<span class="shop_item_price">30</span></p>
+              </a>
+            </div>
+            <div class="shop_item_edit">
+              <h2>已选择：<p>手动拆卸疏通</p></h2>
+              <p><b class="sub">-</b><span class="count">1</span><b class="add">+</b></p>
+            </div>
+          </div>
+          <button class="delete">删除</button>
+        </li>
+        <li>
+          <h1>家庭灯具管道维修<span class="edit_store">编辑</span><span class="complete_store">完成</span></h1>
+          <div class="wrap">
+            <b class="choose_buy"></b>
+            <img src="img/shopcar.png">
+            <div class="shop_item">
+              <a href="index.html">
+                <h3 class="shop_item_tit">已选择：<p>手动拆卸疏通</p><span>X1</span></h3>
+                <p>￥<span class="shop_item_price">30</span></p>
+              </a>
+            </div>
+            <div class="shop_item_edit">
+              <h2>已选择：<p>手动拆卸疏通</p></h2>
+              <p><b class="sub">-</b><span class="count">1</span><b class="add">+</b></p>
+            </div>
+          </div>
+          <button class="delete">删除</button>
+        </li>
+      </ul>
+    </div>
+    <div class="pay_btn foot_shop">
+      <b class="all_choose">全选</b>
+      <button>结算</button>
+      <p>合计：￥<span class="all_price">0</span><i>不含面议，参考费用</i></p>
+    </div>
+    <div class="layer_details">
+      <b class="close_btn"></b>
+      <div class="layer_details_head">
+        <div class="wrap">
+          <img src="img/order_pic.png">
+          <div class="head_tit">
+            <p class="limit">￥45 <s>￥80</s><span class="icon_limit"></span></p>
+            <!-- <p class="unlimit"><span>45</span>元起</p> -->
+            <p class="choose_item">已选服务：<span></span></p>
+          </div>
+        </div>
+      </div>
+      <div class="layer_details_body" style="margin-bottom: 1.2rem;">
+        <div class="layer_serve">
+          <h1 class="font3">服务项</h1>
+          <span>非拆卸，手动疏通</span>
+          <span>非拆卸，电动疏通加手动疏通</span>
+          <span>非拆卸，手动疏通</span>
+        </div>
+        
+      </div>
+      <div class="order_btn sure" style="position: absolute;">
+        <button>确定</button>
+      </div>
+    </div>
+    <div class="blank_wrapper"></div>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/shoppingCar.js" type="text/javascript" charset="utf-8"></script> 
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+    
+</body>
+</html>

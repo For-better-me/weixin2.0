@@ -1,0 +1,68 @@
+$(function(){
+    //区域选择
+    var selectContactDom = $('#select_contact');
+    selectContactDom.bind('click', function () {
+        // var sccode = showContactDom.attr('data-city-code');
+        // var scname = showContactDom.attr('data-city-name');
+
+        var oneLevelId = selectContactDom.attr('data-province-code');
+        var twoLevelId = selectContactDom.attr('data-city-code');
+        var threeLevelId = selectContactDom.attr('data-district-code');
+        var iosSelect = new IosSelect(3, 
+            [iosProvinces, iosCitys, iosCountys],
+            {
+                title: '',
+                itemHeight: 35,
+                relation: [1, 1, 0, 0],
+                oneLevelId: oneLevelId,
+                twoLevelId: twoLevelId,
+                threeLevelId: threeLevelId,
+                callback: function (selectOneObj, selectTwoObj, selectThreeObj) {
+                    // contactProvinceCodeDom.val(selectOneObj.id); 
+                    // contactProvinceCodeDom.attr('data-province-name', selectOneObj.value);
+                    // contactCityCodeDom.val(selectTwoObj.id);
+                    // contactCityCodeDom.attr('data-city-name', selectTwoObj.value);
+
+                    selectContactDom.attr('data-province-code', selectOneObj.id);
+                    selectContactDom.attr('data-city-code', selectTwoObj.id);
+                    selectContactDom.attr('data-district-code', selectThreeObj.id);
+                    selectContactDom.val(selectOneObj.value + ' ' + selectTwoObj.value + ' ' + selectThreeObj.value);
+                }
+        });
+    });
+    var nameDom = $('#name_linkman');
+    var phoneDom = $('#phone_linkman');
+    var siteDom = $('#site_linkman');
+    var nameValue = '';
+    var phoneValue = 'xx';
+    var siteValue = 'xx';
+    var areaValue = '';
+    phoneDom.blur(function(){
+        phoneValue = phoneDom.val();
+        if(!phone_validate(phoneValue)){
+            phoneDom.val('');
+            layer_tip('手机格式不正确')
+        }
+    })
+    function isSave(){
+        nameValue = nameDom.val();
+        phoneValue = phoneDom.val();
+        siteValue = siteDom.val();
+        areaValue = selectContactDom.val();
+        if(nameValue && phoneValue && siteValue && areaValue){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    $('.save_addr').click(function(){
+        isSave()
+        if(isSave()){
+            alert('success')
+        }
+        else{
+            layer_tip('请把信息填写完整')
+        }
+    })
+})

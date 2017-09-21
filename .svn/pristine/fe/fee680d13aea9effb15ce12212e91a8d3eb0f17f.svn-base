@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>编辑地址</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iosSelect.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <form>
+      <div class="edit_addr">
+        <ul>
+          <li>姓名<input type="text" placeholder="请输入维修联系人姓名" value="" id="name_linkman" /></li>
+          <li>电话<input type="number" placeholder="请输入联系人姓名，不支持座机" id="phone_linkman"/></li>
+          <li>所在区域<input placeholder="点击选择" id="select_contact" readonly="readonly" /></li>
+          <li>详细地址 <textarea placeholder="请输入需要维修的详细地址，便于维修小 哥上门服务" id="site_linkman"></textarea></li>
+        </ul>
+      </div>
+      <div id="map">
+          <iframe id="myframe" src="https://3gimg.qq.com/lightmap/components/locationPicker2/index.html?search=1&amp;type=1&amp;key=NQ6BZ-PZN3F-PONJU-NV3L4-2B4IZ-7GFCT&amp;referer=myapp" frameborder="0" width="100%" height="100%"></iframe>
+      </div>
+      <button class="form_btn save_addr" type="button">保存</button>
+    </form>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/iosSelect.js"></script>
+    <script src="js/iscroll.js"></script>
+    <script src="js/areaData.js"></script>
+    <script src="js/edit_addr.js" type="text/javascript" charset="utf-8"></script> 
+    <script charset="utf-8" src="http://map.qq.com/api/js?v=2.exp"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+
+</body>
+</html>

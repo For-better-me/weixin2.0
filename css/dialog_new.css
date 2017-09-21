@@ -1,0 +1,56 @@
+.dan_mark{
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0,0.5);
+		position: fixed;
+		left: 0;
+		top:0;
+		z-index: 999999999;
+}
+
+.dan_dialog{
+	width: 6.16rem;
+    margin: 3.51rem auto 0;
+    border-radius: 15px;
+    z-index: 999999999999;
+    overflow: hidden;
+    background: #fff;
+    border-radius: .08rem;
+}
+.dan_dialog .dan_p{
+    margin: 0 auto;
+   	padding: 0 .48rem .43rem;
+    text-align: justify;
+    color: #666;
+    background: #fff;
+    border-bottom: 1px solid #e5e5e5;
+    font-size: .26rem;
+}
+.dan_dialog .tip{
+	display: inline-block;
+	margin: .5rem .48rem .3rem;
+    font-size: .28rem;
+    color: #333;
+}
+.dan_btns{
+		width: 100%;
+		height: .99rem;
+		background: #fff;
+		line-height: .99rem;
+
+}
+.dan_btns span{
+		display: inline-block;
+	    width:1.2rem;
+	    float: right; 
+		font-size: .28rem;
+	    color: #333;
+		height: .6rem;
+		line-height: .99rem;
+		text-align: center;
+		
+}
+.dan_btns span:first-child{
+	margin-right: .34rem;
+	color: #FB870D;
+}

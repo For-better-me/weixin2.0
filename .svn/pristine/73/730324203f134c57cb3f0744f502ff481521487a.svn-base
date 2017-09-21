@@ -1,0 +1,5 @@
+// $(function(){
+//     $('.letter a').on('touchmove',function(){
+//         console.log($(this).text())
+//     })
+// })

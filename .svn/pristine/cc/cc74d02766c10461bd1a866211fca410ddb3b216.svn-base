@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>发表管理</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" href="css/iosSelect.css">
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="bill_wrap">
+      <div class="common_tit_cb">
+        <a href="javascript:;" class="on">可申请</a>
+        <a href="javascript:;">已申请</a>
+      </div>
+      <div class="unbill_list">
+        <ul>
+          <li>
+            <h1>家庭灯具管道维修</h1>
+            <div class="wrap">
+              <b class="choose_apply"></b>
+              <img src="img/shopcar.png">
+              <div class="unbill_item">
+                <h4>订单编号：454354343433221</h4>
+                <p>手动拆卸疏通</p>
+                <span>￥<i>300</i></span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h1>家庭灯具管道维修</h1>
+            <div class="wrap">
+              <b class="choose_apply"></b>
+              <img src="img/shopcar.png">
+              <div class="unbill_item">
+                <h4>订单编号：454354343433221</h4>
+                <p>手动拆卸疏通</p>
+                <span>￥<i>300</i></span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h1>家庭灯具管道维修</h1>
+            <div class="wrap">
+              <b class="choose_apply"></b>
+              <img src="img/shopcar.png">
+              <div class="unbill_item">
+                <h4>订单编号：454354343433221</h4>
+                <p>手动拆卸疏通</p>
+                <span>￥<i>300</i></span>
+              </div>
+            </div>
+          </li>
+          <li>
+            <h1>家庭灯具管道维修</h1>
+            <div class="wrap">
+              <b class="choose_apply"></b>
+              <img src="img/shopcar.png">
+              <div class="unbill_item">
+                <h4>订单编号：454354343433221</h4>
+                <p>手动拆卸疏通</p>
+                <span>￥<i>300</i></span>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <button class="form_btn2" type="button" onclick="javascript:window.location.href='apply_bill.html'">立即申请</button>
+      </div>
+      <div class="bill_list none">
+        <ul>
+          <li>
+            <a href="bill_info.html">
+              <h2>申请金额<span>处理中</span></h2>
+              <p>2017-05-25    13:20:50</p>
+              <h1><i>￥</i>3000</h1>
+              <b>查看详情</b>
+            </a>
+          </li>
+          <li>
+            <a href="bill_info.html">
+              <h2>申请金额<span>处理中</span></h2>
+              <p>2017-05-25    13:20:50</p>
+              <h1><i>￥</i>3000</h1>
+              <b>查看详情</b>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+    </div>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+    <script type="text/javascript">
+      $('.common_tit_cb a').click(function(){
+        var bill_tit_index = $(this).index();
+        $(this).addClass('on').siblings('a').removeClass('on');
+        if(bill_tit_index == 0){
+          $('.unbill_list').show();
+          $('.bill_list').hide();
+        }
+        else{
+          $('.unbill_list').hide();
+          $('.bill_list').show();
+        }
+      })
+      $('.choose_apply').click(function(){
+        $(this).toggleClass('on')
+      })
+    </script>
+    
+</body>
+</html>

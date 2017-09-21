@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>优惠券</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="coupon_wrap">
+      <div class="coupon_tit">
+        <a href="javascript:;" class="on">未使用</a>
+        <a href="javascript:;">已使用</a>
+      </div>
+      <!-- 未使用优惠券列表 -->
+      <div class="coupon_list">
+        <div class="coupon_code wrap">
+          <form>
+            <input type="text" placeholder="请输入优惠券码" />
+            <button type="button">验证</button>
+          </form>
+        </div>
+        <ul>
+          <li class="wrap main_color"> <!-- main_color是有效期内的券 -->
+            <h1>空调清洗优惠券<span>全平台</span></h1>
+            <div class="coupon_detail2">
+              <ol class="coupon_info">
+                <li><b>• </b>满100元使用</li>
+                <li><b>• </b>仅限北京使用</li>
+                <li><b>• </b>2017.01.31—2017.02.06</li>
+              </ol>
+              <div class="coupon_price">
+                <h1><span>￥</span>10</h1>
+                <p class="look_details_btn">详情信息<b></b></p>
+              </div>
+            </div>
+            <div class="coupon_detail">
+              <h3>限商户：</h3>
+              <p> 58到家、阿姨帮、轻松到家、葡萄生活、58到家、阿姨帮</p>
+              <h3>限服务品类：</h3>
+              <p>1、洗衣机排水电磁阀维修更换 </p>
+              <p>2、洗衣机电脑板</p>
+            </div>
+          </li>
+          <li class="wrap expire"> <!-- expire是有已过期内的券 -->
+            <h1>空调清洗优惠券<span>全平台</span></h1>
+            <div class="coupon_detail2">
+              <ol class="coupon_info">
+                <li><b>• </b>满100元使用</li>
+                <li><b>• </b>仅限北京使用</li>
+                <li><b>• </b>2017.01.31—2017.02.06</li>
+              </ol>
+              <div class="coupon_price">
+                <h1><span>￥</span>10</h1>
+                <p class="look_details_btn">详情信息<b></b></p>
+              </div>
+            </div>
+            <div class="coupon_detail">
+              <h3>限商户：</h3>
+              <p> 58到家、阿姨帮、轻松到家、葡萄生活、58到家、阿姨帮</p>
+              <h3>限服务品类：</h3>
+              <p>1、洗衣机排水电磁阀维修更换 </p>
+              <p>2、洗衣机电脑板</p>
+              <h3>限商户：</h3>
+              <p> 58到家、阿姨帮、轻松到家、葡萄生活、58到家、阿姨帮</p>
+              <h3>限服务品类：</h3>
+              <p>1、洗衣机排水电磁阀维修更换 </p>
+              <p>2、洗衣机电脑板</p>
+            </div>
+          </li>
+          <li class="wrap freeze"> <!-- freeze是有已过期内的券 -->
+            <h1>空调清洗优惠券<span>全平台</span></h1>
+            <div class="coupon_detail2">
+              <ol class="coupon_info">
+                <li><b>• </b>满100元使用</li>
+                <li><b>• </b>仅限北京使用</li>
+                <li><b>• </b>2017.01.31—2017.02.06</li>
+              </ol>
+              <div class="coupon_price">
+                <h1><span>￥</span>10</h1>
+                <p class="look_details_btn">详情信息<b></b></p>
+              </div>
+            </div>
+            <div class="coupon_detail">
+              <h3>限商户：</h3>
+              <p> 58到家、阿姨帮、轻松到家、葡萄生活、58到家、阿姨帮</p>
+              <h3>限服务品类：</h3>
+              <p>1、洗衣机排水电磁阀维修更换 </p>
+              <p>2、洗衣机电脑板</p>
+            </div>
+          </li>
+        </ul>
+        <div class="no_coupon none">
+          没有优惠券--样式待优化
+        </div>
+      </div>
+      <!-- 已使用优惠券列表 -->
+      <div class="coupon_list" style="display: none;">
+        <ul>
+          <li class="wrap abate"> <!-- abate是有已失效内的券 -->
+            <h1>空调清洗优惠券<span>全平台</span></h1>
+            <div class="coupon_detail2">
+              <ol class="coupon_info">
+                <li><b>• </b>满100元使用</li>
+                <li><b>• </b>仅限北京使用</li>
+                <li><b>• </b>2017.01.31—2017.02.06</li>
+              </ol>
+              <div class="coupon_price">
+                <h1><span>￥</span>10</h1>
+                <p class="look_details_btn">详情信息<b></b></p>
+              </div>
+            </div>
+            <div class="coupon_detail">
+              <h3>限商户：</h3>
+              <p> 58到家、阿姨帮、轻松到家、葡萄生活、58到家、阿姨帮</p>
+              <h3>限服务品类：</h3>
+              <p>1、洗衣机排水电磁阀维修更换 </p>
+              <p>2、洗衣机电脑板</p>
+            </div>
+          </li>
+        </ul>
+        <div class="no_coupon none">
+          没有优惠券--样式待优化
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/coupon.js" type="text/javascript" charset="utf-8"></script> 
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+    
+    
+</body>
+</html>

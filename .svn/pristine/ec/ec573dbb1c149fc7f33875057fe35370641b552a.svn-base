@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="keywords" content="万能小哥" />
+    <meta name="description" content="万能小哥，您身边的维修专家" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="format-detection" content="address=no;">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>维修详情</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/css.css" />
+    <script type="text/javascript" src="js/adaptMobile.js"></script>
+</head>
+<body>
+    <div class="fix_details">
+      <div class="fix_img">
+        <img src="img/fix-img.png">
+      </div>
+      <div class="fix_item_info">
+      <!-- //限时特惠 -->
+        <!-- <div class="limiting wrap">
+          <h1>龙头安装</h1>
+          <p>￥45 <s>￥80</s><span class="icon_limit"></span></p>
+        </div> -->
+        <!-- 非限时特惠 -->
+        <div class="unlimit wrap">
+          <h1>龙头安装<p><span>45</span>元起</p></h1>
+        </div>
+        <div class="select_specific wrap">请选择具体服务项</div>
+      </div>
+      <div class="fix_wrap">
+        <div class="title_wrap">
+          <a href="javascript:;" class="on">商品详情</a>
+          <a href="javascript:;">评价（<span>3</span>）</a>
+        </div>
+        <div class="info_wrap">此处为商品详情</div>
+        <div class="value_list wrap">
+          <ul>
+            <li>
+              <div class="avatar">
+                <img src="img/avatar.png">
+              </div>
+              <div class="value_info">
+                <h1>古天乐<span>2017-05-01</span></h1>
+                <div class="star">
+                  <ul>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                  </ul>
+                  <span>非常好</span>
+                </div>
+                <p>师傅维修速度很快，很负责，完美！</p>
+              </div>
+            </li>
+            <li>
+              <div class="avatar">
+                <img src="img/avatar.png">
+              </div>
+              <div class="value_info">
+                <h1>古天乐<span>2017-05-01</span></h1>
+                <div class="star">
+                  <ul>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                  </ul>
+                  <span>非常好</span>
+                </div>
+                <p>师傅维修速度很快，很负责，完美！</p>
+              </div>
+            </li>
+            <li>
+              <div class="avatar">
+                <img src="img/avatar.png">
+              </div>
+              <div class="value_info">
+                <h1>古天乐<span>2017-05-01</span></h1>
+                <div class="star">
+                  <ul>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                    <li><img src="img/star.png"></li>
+                  </ul>
+                  <span>非常好</span>
+                </div>
+                <p>师傅维修速度很快，很负责，完美！</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="buy_foot">
+      <div class="shoppingcar">
+        <a href="javascript:;">
+          <img src="img/shopcart.png">
+          <p>购物车</p>
+        </a>
+      </div>
+      <div class="join_car">加入购物车</div>
+      <div class="once_fix">立即报修</div>
+    </div>
+    <script src="js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/fix_details.js" type="text/javascript" charset="utf-8"></script> 
+    <script src="js/common.js" type="text/javascript" charset="utf-8"></script> 
+    
+</body>
+</html>
